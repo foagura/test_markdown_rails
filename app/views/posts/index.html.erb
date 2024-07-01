@@ -7,7 +7,7 @@
 
 <% @posts.each do |post| %>
 <div>
-  <%= post.content %>
+  <%= markdown(post.content) %>
   <%= post.created_at %>
 </div>
 <% end %>
